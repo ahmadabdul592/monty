@@ -115,18 +115,25 @@ void pchar(stack_t **stack, unsigned int nline)
  */
 void pstr(stack_t **stack, unsigned int nline)
 {
-	stack_t *temp = *stack;
+	int idx = 0;
+	char res[] = "";
+	char c;
+	stack_t *temp;
 
-	(void) nline;
-
+	temp = *stack;
+	(void)nline;
+	/* starts at the top */
 	while (temp)
 	{
-		if (temp->n != 0 && isascii(temp->n))
-			printf(temp->n);
-		else
+		if (temp->n == 0)
 			break;
-
+		if (_isalpha(temp->n) == 0)
+			break;
+		c = temp->n;
+		printf("%c", c);
+		res[idx] += c;
 		temp = temp->next;
+		idx++;
 	}
 	printf("\n");
 }
