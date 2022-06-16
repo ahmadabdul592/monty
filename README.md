@@ -1,5 +1,3 @@
-# 0x18. C - Stacks, Queues - LIFO, FIFO
-
 ## Description
 In this project we are tasked to create an interpreter for Monty ByteCode files. These files will have commands per line to manipulate the data structure given.
 
@@ -21,12 +19,6 @@ Compile with:
 ```
 gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 ```
----
-
-## Example
-
-![demo](https://puu.sh/CksXw/b90dd61cb5.png)
-
 ---
 
 ## Files
@@ -59,18 +51,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 * Contains add, sub, div, mul, mod.
 
 ### [opcodes_mode.c](./opcodes_mode.c)
-* Contains stack and queue.
-
----
-
-## Requirements
-- All your files will be compiled on Ubuntu 14.04 LTS
-- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-- You allowed to use a maximum of one global variable
-- No more than 5 functions per file
-- You are allowed to use the C standard library
-- The repository monty should be added as a submodule to your holbertonschool-low_level_programming repository, under the name 0x18-stacks_queues_lifo_fifo
-
+* Contains stack and queue
 ---
 
 ## Tasks
@@ -101,10 +82,5 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 * The opcode nop doesn’t do anything.
 
 ### Advanced Tasks
-* opcodes: sub, div, mul, mod, comments, pchar, pstr, rotl, rotr, stack, queue, Holberton, Add two digits, Multiplication, Multiplication level up
-
+* opcodes: sub, div, mul, mod, comments, pchar, pstr, rotl, rotr, stack, queue.
 ---
-
-## Authors
-* **Derrick Gee** - [kai-dg](https://github.com/kai-dg)
-* **Wescott Sharples** - [wescottsharples](https://github.com/wescottsharples)
